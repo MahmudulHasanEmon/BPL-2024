@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="2dp"
+    android:background="@color/app_colorTR">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation=".25dp">
+
+        <RelativeLayout
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:id="@+id/baackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/two_color"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/hhhhhhhhh"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                app:cardCornerRadius="50dp"
+                app:cardElevation=".25dp">
+
+                <RelativeLayout
+                    android:id="@+id/baackground2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/two_color"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bangla"
+                        android:text="১"
+                        android:textColor="@color/app_color1"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/claick"
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/bangla"
+                    android:gravity="center"
+                    android:text="আমার সোনার বাংলা"
+                    android:textColor="@color/app_color2"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/name"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/addres"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/bangla"
+                        android:text="আমার সোনার বাংলা"
+                        android:textColor="@color/app_color4"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/catagori"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/addres"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/bangla"
+                        android:text="আমার সোনার বাংলা"
+                        android:textColor="@color/app_color1"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+<!--    <RelativeLayout
+        android:background="@color/app_colorbb"
+        android:backgroundTint="@color/app_colorbb"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+
+
+    </RelativeLayout>-->
+
+
+</RelativeLayout>

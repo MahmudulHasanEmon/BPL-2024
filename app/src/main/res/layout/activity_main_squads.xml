@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/app_colorbb"
+    android:layout_height="match_parent"
+    tools:context=".MainSquads">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:backgroundTint="@color/app_color4"
+        android:transitionName="MaterialToolbar">
+
+        <Button
+            android:id="@+id/back"
+            android:backgroundTint="@color/app_color3"
+            android:layout_width="24dp"
+            android:background="@drawable/baseline_arrow_back_24"
+            android:layout_height="24dp"
+            android:layout_marginRight="25dp" />
+
+        <TextView
+            android:id="@+id/toolbarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/solaimanlipi"
+            android:text=" কালেমা"
+            android:textColor="@color/app_color3"
+            android:textSize="22sp"
+            android:textStyle="normal"
+            android:transitionName="toolbarText"/>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:id="@+id/nbvnbv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/gggggggggg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/two_color"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/pppppppp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bangla"
+                    android:text="দেশি ক্রিকেটার"
+                    android:textColor="@color/app_color4"
+                    android:textSize="22sp" />
+
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gggggggggg"
+                android:paddingTop="5dp"
+                android:paddingBottom="3dp"
+                android:scrollbars="none"
+                tools:listitem="@layout/playar_itma_bangladesh" />
+            <RelativeLayout
+                android:id="@+id/ggggg"
+                android:layout_below="@id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/two_color"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/ppppp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bangla"
+                    android:text="দেশি ক্রিকেটার"
+                    android:textColor="@color/app_color4"
+                    android:textSize="22sp" />
+
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ggggg"
+                android:paddingTop="4dp"
+                android:scrollbars="none"
+                tools:listitem="@layout/playar_itma_bangladesh" />
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

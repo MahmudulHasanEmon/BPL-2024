@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:title="বিপিএল ২০২৪ সময়সূচী"
+        app:titleTextColor="@color/app_color3"
+        android:backgroundTint="@color/app_color4"
+        android:transitionName="MaterialToolbar">
+
+
+        <TextView
+            android:id="@+id/toolbarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/solaimanlipi"
+            android:text=" "
+            android:textColor="@color/app_color3"
+            android:textSize="22sp"
+            android:textStyle="normal"
+            android:transitionName="toolbarText" />
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <GridView
+        android:layout_below="@id/toolbar"
+        android:id="@+id/gridView"
+        tools:listitem="@layout/main_layout"
+        android:layout_margin="10dp"
+        android:numColumns="2"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"/>
+
+
+
+
+
+</RelativeLayout>

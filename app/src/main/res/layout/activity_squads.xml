@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_colorbb"
+    tools:context=".SquadsActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:backgroundTint="@color/app_color4"
+        android:transitionName="MaterialToolbar">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/baseline_arrow_back_24"
+            android:backgroundTint="@color/app_color3" />
+
+        <TextView
+            android:id="@+id/toolbarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/solaimanlipi"
+            android:text=" দল ও খেলোয়ার "
+            android:textColor="@color/app_color3"
+            android:textSize="22sp"
+            android:textStyle="normal"
+            android:transitionName="toolbarText" />
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <GridView
+        android:paddingTop="4dp"
+        android:id="@+id/gridView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:numColumns="1"
+        android:scrollbars="none"
+        tools:listitem="@layout/squads_grid_itme" />
+
+
+</RelativeLayout>
